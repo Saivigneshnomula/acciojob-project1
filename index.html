@@ -1,13 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mini Banking System</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,94 +12,72 @@
     <div class="container">
 
         <h1>🏦 Mini Banking System</h1>
+        <p class="subtitle">
+            Create accounts, deposit, withdraw, transfer money and view transactions.
+        </p>
 
         <!-- Create Account -->
-        <div class="section">
-
+        <div class="card">
             <h2>Create Account</h2>
 
             <input
                 type="text"
-                id="name"
+                id="holderName"
                 placeholder="Enter account holder name"
             >
 
             <input
                 type="number"
-                id="balance"
+                id="initialBalance"
                 placeholder="Enter initial balance"
             >
 
-            <button id="createBtn">
-                Create Account
-            </button>
-
-        </div>
-
-
-        <!-- Accounts -->
-        <div class="section">
-
-            <h2>Accounts</h2>
-
-            <div id="accountsContainer">
-                <!-- Accounts will be displayed here -->
-            </div>
-
+            <button id="createAccountBtn">Create Account</button>
         </div>
 
 
         <!-- Deposit -->
-        <div class="section">
-
+        <div class="card">
             <h2>Deposit Money</h2>
 
             <input
                 type="number"
                 id="depositAccountNo"
-                placeholder="Enter account number"
+                placeholder="Account number"
             >
 
             <input
                 type="number"
                 id="depositAmount"
-                placeholder="Enter amount"
+                placeholder="Amount"
             >
 
-            <button id="depositBtn">
-                Deposit
-            </button>
-
+            <button id="depositBtn">Deposit</button>
         </div>
 
 
         <!-- Withdraw -->
-        <div class="section">
-
+        <div class="card">
             <h2>Withdraw Money</h2>
 
             <input
                 type="number"
                 id="withdrawAccountNo"
-                placeholder="Enter account number"
+                placeholder="Account number"
             >
 
             <input
                 type="number"
                 id="withdrawAmount"
-                placeholder="Enter amount"
+                placeholder="Amount"
             >
 
-            <button id="withdrawBtn">
-                Withdraw
-            </button>
-
+            <button id="withdrawBtn">Withdraw</button>
         </div>
 
 
         <!-- Transfer -->
-        <div class="section">
-
+        <div class="card">
             <h2>Transfer Money</h2>
 
             <input
@@ -121,63 +95,61 @@
             <input
                 type="number"
                 id="transferAmount"
-                placeholder="Enter amount"
+                placeholder="Amount"
             >
 
-            <button id="transferBtn">
-                Transfer
-            </button>
-
+            <button id="transferBtn">Transfer</button>
         </div>
 
 
         <!-- Check Balance -->
-        <div class="section">
-
+        <div class="card">
             <h2>Check Balance</h2>
 
             <input
                 type="number"
                 id="balanceAccountNo"
-                placeholder="Enter account number"
+                placeholder="Account number"
             >
 
-            <button id="checkBalanceBtn">
-                Check Balance
-            </button>
+            <button id="checkBalanceBtn">Check Balance</button>
 
             <p id="balanceResult"></p>
-
         </div>
 
 
         <!-- Transaction History -->
-        <div class="section">
-
+        <div class="card">
             <h2>Transaction History</h2>
 
             <input
                 type="number"
                 id="transactionAccountNo"
-                placeholder="Enter account number"
+                placeholder="Account number"
             >
 
-            <button id="showTransactionsBtn">
-                Show Transactions
-            </button>
+            <button id="transactionBtn">Show Transactions</button>
 
-            <div id="transactionsContainer">
-                <!-- Transactions will be displayed here -->
-            </div>
-
+            <div id="transactionResult"></div>
         </div>
 
-    </div>
 
+        <!-- All Accounts -->
+        <div class="card">
+            <h2>All Accounts</h2>
+
+            <button id="showAccountsBtn">Show All Accounts</button>
+
+            <div id="accountsResult"></div>
+        </div>
+
+
+        <!-- Message -->
+        <p id="message"></p>
+
+    </div>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
-```
