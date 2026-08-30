@@ -504,8 +504,8 @@ function showMessage(message, type) {
         document.getElementById("message");
 
     messageElement.innerText = message;
- 
-    messageElement.className = "main-version";
+
+    messageElement.className = type;
 }
 
 
