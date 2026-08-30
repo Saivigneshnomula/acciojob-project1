@@ -507,3 +507,5 @@ function showMessage(message, type) {
 
     messageElement.className = type;
 }
+
+
