@@ -505,5 +505,5 @@ function showMessage(message, type) {
 
     messageElement.innerText = message;
 
-    messageElement.className = type;
+    messageElement.className = "feature-version";
 }
